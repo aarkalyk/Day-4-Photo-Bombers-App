@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F89BD601B31888300A8F045 /* PhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F89BD5F1B31888300A8F045 /* PhotoController.m */; };
+		3F89BD631B318F0800A8F045 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F89BD621B318F0800A8F045 /* DetailViewController.m */; };
 		3FAA6B1B1B312C9400DE5607 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA6B1A1B312C9400DE5607 /* main.m */; };
 		3FAA6B1E1B312C9400DE5607 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA6B1D1B312C9400DE5607 /* AppDelegate.m */; };
 		3FAA6B211B312C9400DE5607 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA6B201B312C9400DE5607 /* ViewController.m */; };
@@ -34,6 +35,8 @@
 		0A345BB2E725628EB4AFB937 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3F89BD5E1B31888300A8F045 /* PhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoController.h; sourceTree = "<group>"; };
 		3F89BD5F1B31888300A8F045 /* PhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoController.m; sourceTree = "<group>"; };
+		3F89BD611B318F0800A8F045 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		3F89BD621B318F0800A8F045 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		3FAA6B151B312C9400DE5607 /* Day 4 Photo Bombers App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day 4 Photo Bombers App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAA6B191B312C9400DE5607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FAA6B1A1B312C9400DE5607 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -108,6 +111,8 @@
 				3FAA6B1D1B312C9400DE5607 /* AppDelegate.m */,
 				3FAA6B1F1B312C9400DE5607 /* ViewController.h */,
 				3FAA6B201B312C9400DE5607 /* ViewController.m */,
+				3F89BD611B318F0800A8F045 /* DetailViewController.h */,
+				3F89BD621B318F0800A8F045 /* DetailViewController.m */,
 				3FAA6B3E1B313BFC00DE5607 /* PhotoCollectionViewCell.h */,
 				3FAA6B3F1B313BFC00DE5607 /* PhotoCollectionViewCell.m */,
 				3F89BD5E1B31888300A8F045 /* PhotoController.h */,
@@ -297,6 +302,7 @@
 				3FAA6B1E1B312C9400DE5607 /* AppDelegate.m in Sources */,
 				3FAA6B1B1B312C9400DE5607 /* main.m in Sources */,
 				3F89BD601B31888300A8F045 /* PhotoController.m in Sources */,
+				3F89BD631B318F0800A8F045 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
