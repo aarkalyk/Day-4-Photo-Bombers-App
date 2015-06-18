@@ -20,6 +20,7 @@
 		3FAA6B351B312C9400DE5607 /* Day_4_Photo_Bombers_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA6B341B312C9400DE5607 /* Day_4_Photo_Bombers_AppTests.m */; };
 		3FAA6B401B313BFC00DE5607 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA6B3F1B313BFC00DE5607 /* PhotoCollectionViewCell.m */; };
 		3FAA6B421B313EA300DE5607 /* ggg_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FAA6B411B313EA300DE5607 /* ggg_image.jpg */; };
+		3FFC02211B32A55300C8F453 /* photo.jpg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FFC02201B32A55300C8F453 /* photo.jpg.png */; };
 		B7F853DE00B2261CBC008E81 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C42B66788AFB2BC65476E87 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		3FAA6B3E1B313BFC00DE5607 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
 		3FAA6B3F1B313BFC00DE5607 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
 		3FAA6B411B313EA300DE5607 /* ggg_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ggg_image.jpg; sourceTree = "<group>"; };
+		3FFC02201B32A55300C8F453 /* photo.jpg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.jpg.png; sourceTree = "<group>"; };
 		4C42B66788AFB2BC65476E87 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		85BB35EAC3C8F05011316AB8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +115,7 @@
 		3FAA6B171B312C9400DE5607 /* Day 4 Photo Bombers App */ = {
 			isa = PBXGroup;
 			children = (
+				3FFC02201B32A55300C8F453 /* photo.jpg.png */,
 				3FAA6B1C1B312C9400DE5607 /* AppDelegate.h */,
 				3FAA6B1D1B312C9400DE5607 /* AppDelegate.m */,
 				3FAA6B1F1B312C9400DE5607 /* ViewController.h */,
@@ -253,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FFC02211B32A55300C8F453 /* photo.jpg.png in Resources */,
 				3FAA6B241B312C9400DE5607 /* Main.storyboard in Resources */,
 				3FAA6B291B312C9400DE5607 /* LaunchScreen.xib in Resources */,
 				3FAA6B261B312C9400DE5607 /* Images.xcassets in Resources */,

@@ -18,6 +18,9 @@
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (nonatomic) NSString *accessToken;
 @property (nonatomic) NSMutableArray *photos;
+@property (nonatomic) NSMutableData *usernames;
+@property (strong, nonatomic) IBOutlet UILabel *username;
+@property (strong, nonatomic) IBOutlet UITextField *searchBox;
 
 @end
 
@@ -38,12 +41,12 @@
             [userDefaults setObject:self.accessToken forKey:@"accessToken"];
             [userDefaults synchronize];
             NSLog(@"saved crdedentials");
-            [self downloadImages];
+            [self downloadImages:[[NSString alloc] initWithFormat:@"https://api.instagram.com/v1/tags/thesummerstartupschool/media/recent?access_token=%@", self.accessToken]];
             // downlaod images
         }];
     }else{
         NSLog(@"using previous credentials");
-        [self downloadImages];
+        [self downloadImages:[[NSString alloc] initWithFormat:@"https://api.instagram.com/v1/tags/thesummerstartupschool/media/recent?access_token=%@", self.accessToken]];
         //dowlnoad images
     }
     
@@ -55,13 +58,19 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)searchButtonPressed:(UIButton *)sender {
+    NSString *urlString = [[NSString alloc] initWithFormat:@"https://api.instagram.com/v1/tags/%@/media/recent?access_token=%@", self.searchBox.text, self.accessToken];
+    NSLog(@"works! %@", urlString);
+    [self downloadImages:urlString];
+}
+
+
 #pragma mark - helper methods
--(void) downloadImages
+-(void) downloadImages: (NSString *) link
 {
     NSURLSession *session = [NSURLSession sharedSession];
-    NSString *urlString = [[NSString alloc] initWithFormat:@"https://api.instagram.com/v1/tags/thesummerstartupschool/media/recent?access_token=%@", self.accessToken];
     //NSLog(@"%@", urlString);
-    NSURL *url = [[NSURL alloc] initWithString:urlString];
+    NSURL *url = [[NSURL alloc] initWithString:link];
     
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
     NSURLSessionDownloadTask *task = [session  downloadTaskWithRequest:request completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
@@ -70,6 +79,7 @@
         NSDictionary *responseDitionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
         NSLog(@"response dictionary is %@", responseDitionary);
         self.photos = responseDitionary[@"data"];
+
         
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.collectionView reloadData];
